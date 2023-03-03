@@ -4,7 +4,7 @@
 
 ### to create enviornment for any DS project
 ```
-conda create --prefix ./env python=3.7 -y
+conda create --prefix ./env python=3.9 -y
 ```
 ### to activate environment
 ```
@@ -45,3 +45,19 @@ In this setup.py, packages is the parameter It will find packages for each __ini
 In that above mentioned file there is a -e . is there which means,
 1. -e -> editable mode 
 2. . -> current directory 
+
+# now our work flow shold concentrate on logging file and exception file
+1. create a folder exception 
+'''
+mkdir E:\\Insurance_Project\\Insurance_Project
+'''
+2. Within exception folder create __init__.py
+'''
+touch E:\\Insurance_Project\\Insurance_Project\\exception\\__init__.py
+'''
+2. coding started for init file in logging folder and exception folder
+
+'''
+https://docs.python.org/3/howto/logging.html
+'''
+# time to work in main.py to check our logger and exception
