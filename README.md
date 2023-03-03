@@ -42,6 +42,6 @@ In this setup.py, packages is the parameter It will find packages for each __ini
 
 # In the requirements.txt file we will assign install the required packages for our project
 
-In that above mentioned file there is a -e . is there which means
--e -> editable mode \n
-. -> current directory \n
+In that above mentioned file there is a -e . is there which means,
+1. -e -> editable mode 
+2. . -> current directory 
