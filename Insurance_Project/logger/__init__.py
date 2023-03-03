@@ -16,5 +16,5 @@ logging.basicConfig(    filename=LOG_FILE_PATH,
                         filemode="w",
                         format='[%(asctime)s] %(name)s - %(levelname)s - %(message)s',
                         #level= logging.INFO,
-                        level= logging.DEBUG, ## if we write debug then it will take each level above this
+                        level= logging.DEBUG, ## if we write debug then it will take each level above this with debug info
                     )
