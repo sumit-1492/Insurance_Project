@@ -2,8 +2,8 @@ from Insurance_Project.logger import logging
 from Insurance_Project.exception import InsuraneceException
 import os,sys
 from Insurance_Project.utils import get_collecttion_as_dataframe
-#from Insurance_Project.entity.config_entity import DataIngestionConfig
-#from Insurance_Project.entity import config_entity
+from Insurance_Project.entity.config_entity import DataIngestionConfig
+from Insurance_Project.entity import config_entity
 #from Insurance_Project.components.data_ingestion import DataIngestion
 #from Insurance_Project.components.data_validation import Datavalidation
 
@@ -20,6 +20,11 @@ from Insurance_Project.utils import get_collecttion_as_dataframe
 
 if __name__== "__main__":
     try:
-        get_collecttion_as_dataframe(database_name = "Insurance1",collection_name = "Insurance_Project1")
+        #get_collecttion_as_dataframe(database_name = "Insurance1",collection_name = "Insurance_Project1")
+        training_pipeline_config = config_entity.TrainingPipelineconfig()
+        data_ingestion_config = DataIngestionConfig(training_pipeline_config=training_pipeline_config)
+        print(data_ingestion_config.to_dict())
+        #data_ingestion = DataIngestion(data_ingestion_config=data_ingestion_config)
+        #data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
     except Exception as e:
         print(e)
