@@ -7,8 +7,8 @@ client = pymongo.MongoClient("mongodb+srv://se2zT5RUfhSvQmau:se2zT5RUfhSvQmau@cl
 db = client.test
 
 DATA_FILE_PATH = (r"E:\Insurance_Project\insurance.csv")
-DATABASE_NAME = "Insurance"
-COLLECTION_NAME =  "Insurance_Project"
+DATABASE_NAME = "Insurance1"
+COLLECTION_NAME =  "Insurance_Project1"
 
 if __name__=="__main__":
     df = pd.read_csv(DATA_FILE_PATH)
